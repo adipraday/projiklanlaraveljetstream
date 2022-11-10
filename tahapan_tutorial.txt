@@ -1,0 +1,26 @@
+// Start xampp(apache & mysql)
+// buat project baru pada directory project ==> CMD (composer create-project laravel/laravel nama-app)
+// buka project di code editor (visual studio code) ==> CMD (code .)
+// pada visual studio code cek koneksi database pada file (.env) ganti nama database sesuai dengan project.
+// jalankan project ==> CMD ke directory project (php artisan serve)
+// di vsc edit configurasi mysql pada directory config/database.php ('charset' => 'utf8mb4') replace to ('charset' => 'utf8') dan ('collation' => 'utf8mb4_unicode_ci') replace to ('collation' => 'utf8_unicode_ci')
+// buka phpmyadmin buat database sesuai dengan project.
+// ke directory project ==> CMD (composer require laravel/jetstream)
+// directory project ==> CMD (php artisan jetstream:install inertia)
+// directory project ==> CMD (npm install)
+// directory project ==> CMD (npm run dev)
+// cek migrate database table, directory project ==> CMD (php artisan migrate)
+// go to https://github.com/appzcoder/crud-generator cek documentaion for installation.
+// run installation, project directory ==> CMD (composer require appzcoder/crud-generator --dev)
+// After that, publish its assets using the vendor:publish, project directory ==> CMD (php artisan vendor:publish --provider="Appzcoder\CrudGenerator\CrudGeneratorServiceProvider")
+// generate crud method for project, CMD project directory
+   ==> php artisan crud:generate Student --fields="name#string; address#string; telephone#string; mobile#string; nic#string" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+// import table, CMD project directory ==> php artisan migrate
+// run project ==> php artisan serve
+// go to and edit routes/web.php
+   ==> Route::resource('admin/students', 'Admin\StudentsController');
+       replace to
+       Route::resource('admin/students', StudentsController::class);
+   ==> add this line
+       use App\Http\Controllers\Admin\StudentsController;
+// cek crud page to localhost:8000/admin/students
