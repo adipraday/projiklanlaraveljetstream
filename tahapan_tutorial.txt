@@ -1,3 +1,4 @@
+SOURCE : https://www.youtube.com/watch?v=pyOcSEkG4Q0&list=LL&index=1
 // Start xampp(apache & mysql)
 // buat project baru pada directory project ==> CMD (composer create-project laravel/laravel nama-app)
 // buka project di code editor (visual studio code) ==> CMD (code .)
@@ -24,3 +25,29 @@
    ==> add this line
        use App\Http\Controllers\Admin\StudentsController;
 // cek crud page to localhost:8000/admin/students
+
+
+SOURCE : https://www.youtube.com/watch?v=WcQFUVZSWmw
+// Go to directory project with CMD.
+// crete new project : composer create-project laravel/laravel nama_project
+// Go to inside directory project, CMD => cd nama_folder_project
+// Buka code editor vsc, CMD => code .
+// inside folder project, edit file .env rename DB_DATABASE.
+// Buka localhost/phpmyadmin, create database sesuai dengan nama database yang ada di file .env
+// Buat model, directory project CMD => php artisan make:model Student -m ("Student" contoh nama model, bisa disesuaikan)
+// di code editor buka file migrasi dari model @database/migrations , edit dan sesuaikan tabel dg kebutuhan 
+// di code editor buka file model @app/Models/file_name_model , edit dan sesuaikan dengan kebutuhan
+// 3:21 di code editor vsc buka file @app/Providers/AppServiceProvider.php , set default string length
+// 3:26 directory project CMD tambahkan package jetstream pada project => composer require laravel/jetstream
+// 3:47 directory project CMD install livewire => php artisan jetstream:install livewire
+// 4:11 directory project CMD install npm => npm install
+// 4:18 directory project CMD jalankan development npm => npm run dev
+// 4:33 directory project CMD jalankan migrasi => php artisan migrate
+// 4:49 directory project CMD create nama_method crud method => php artisan make:nama_method crud => yes
+// 5:13 directory project CMD cek view .blade @resources/views/nama_method/crud.blade.php 
+// 5:29 di code editor vsc, editing file controller
+// 8:03 di code editor vsc, @routes/web.php 
+// 8:59 di code editor vsc, create file @resources/views/nama_method/create.blade.php
+// 9:24 di localhost:8000/register create new user and login
+// 9:38 go to routes file yang barusan dibuat localhost:8000/nama_route
+// 9:42 try create, edit and delete on that page
