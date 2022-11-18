@@ -43,7 +43,7 @@ SOURCE : https://www.youtube.com/watch?v=WcQFUVZSWmw
 // 4:11 directory project CMD install npm => npm install
 // 4:18 directory project CMD jalankan development npm => npm run dev
 // 4:33 directory project CMD jalankan migrasi => php artisan migrate
-// 4:49 directory project CMD create nama_method crud method => php artisan make:nama_method crud => yes
+// 4:49 directory project CMD create nama_method crud method => php artisan make:Livewire NamaMethod => yes
 // 5:13 directory project CMD cek view .blade @resources/views/nama_method/crud.blade.php 
 // 5:29 di code editor vsc, editing file controller
 // 8:03 di code editor vsc, @routes/web.php 
